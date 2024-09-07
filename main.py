@@ -1,6 +1,4 @@
 import numpy as np
-from numpy import triu
-from scipy.linalg import get_blas_funcs
 from sklearn.decomposition import PCA
 import gensim.downloader as api
 from util import *
@@ -19,7 +17,7 @@ st.write("Explore the fascinating world of word embeddings! Input words and see 
 
 st.subheader('Enter Words:')
 words = st.text_input("Enter at least two words to visualize them. Words should be comma separated.",
-                      value='king, queen')
+                      value='king, queen, man, radio, earth, mars, planet')
 # Split the string by commas and remove any extra spaces
 word_list = [word.strip().lower() for word in words.split(',') if word]
 if len(word_list) < 2:
