@@ -1,5 +1,5 @@
 streamlit
-numpy==4.3.2
+numpy
 matplotlib
 scikit-learn
-gensim
+gensim==4.3.2
