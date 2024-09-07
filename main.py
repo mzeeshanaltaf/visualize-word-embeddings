@@ -1,4 +1,6 @@
 import numpy as np
+from numpy import triu
+from scipy.linalg import get_blas_funcs
 from sklearn.decomposition import PCA
 import gensim.downloader as api
 from util import *
